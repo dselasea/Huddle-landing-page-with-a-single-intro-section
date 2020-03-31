@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap');
+
+
+:root {
+    --primary-color: hsl(257, 40%, 49%);
+    --voilet: hsl(257, 40%, 49%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.4rem;
+    font-family: 'Poppins', 'Open sans';
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: url('../images/bg-desktop.svg') no-repeat center center/cover;
+    background-color: var(--voilet);
+    justify-content: center;
+    /* border: 5px solid goldenrod; */
+}
+
+.logo {
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.content {
+    display: flex;   
+    padding-top: 40px;
+    padding-left: 40px; 
+}
+
+.content .mockup img {
+    height: 500px;
+    width: 700px;
+}
+
+.content-text {
+    padding: 60px;
+    color: #fff;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.content-text p {
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+.btn {
+    border: none;
+    padding: 15px 40px;
+    color: var(--voilet);
+    background: #fff;
+    border-radius: 25px;
+}
+
+.footer ul {
+    text-align: right;
+    color: white;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.footer ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+@media(max-width: 1024px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        background: url('../images/bg-mobile.svg') no-repeat center center/cover;
+        background-color: var(--voilet);
+    }
+
+    .logo img {
+        padding: 15px;
+    }
+    .content .mockup img {
+        height: 100%;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .content {
+        display: flex;   
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-text {
+        text-align: center;
+    }
+
+    .content .text h2 {
+        font-weight: 400;
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 15px 70px;
+        color: var(--voilet);
+    }
+
+    .footer ul {
+        text-align: center;
+        margin: 0;
+        padding: 50px;
+    }
+}
+
+
+
